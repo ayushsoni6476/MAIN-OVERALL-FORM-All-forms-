@@ -8,7 +8,8 @@ import Home from "./Home";
 import Form4 from "./Form4";
 import AddProduct from "./AddProduct";
 import Navbar from "./Navbar";
-import ShopList from "./components/ShopList";
+//import ShopList from "./components/ShopList";
+import ProductList from "./components/ProductList";
 import Registration1 from "./Registration1";
 
 class App extends Component {
@@ -20,7 +21,7 @@ class App extends Component {
           <Route path="/Login" exact component={Login} />
           <Route path="/AddProduct" exact component={AddProduct} />
           <Route path="/Form4" exact component={Form4} />
-          <Route exact path="/" component={ShopList} />
+          <Route exact path="/" component={ProductList} />
           <Route path="/Registration1" exact component={Registration1} />
           <Route path="/" component={Home} />
         </Switch>

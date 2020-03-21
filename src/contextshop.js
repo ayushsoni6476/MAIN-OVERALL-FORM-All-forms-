@@ -1,7 +1,14 @@
 import React, { Component } from "react";
-//import { storeProducts, detailProduct } from "./data";
+import { storeShops, detailshop } from "./data";
 const ShopContext = React.createContext();
 class ShopProvider extends Component {
+  state = {
+    shops: [],
+    detailshop: detailshop
+  };
+  handleDetail = () => {
+    console.log("hello from shop detail");
+  };
   render() {
     return (
       <ShopContext.Provider value="hello from  shop context">
@@ -10,6 +17,6 @@ class ShopProvider extends Component {
     );
   }
 }
-const ShopProvider = ShopContext.Consumer;
+const ShopConsumer = ShopContext.Consumer;
 
 export { ShopProvider, ShopConsumer };
